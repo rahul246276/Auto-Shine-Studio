@@ -1,200 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog — Auto Shine Studio | Car Detailing Tips & Guides</title>
-  <meta name="description" content="Expert car detailing tips, guides & insights from Auto Shine Studio. Learn about PPF, ceramic coatings, graphene and car care best practices.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="description" content="Expert car detailing tips, guides & insights from Auto Shine Studio. PPF, ceramic coatings, graphene and car care best practices.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<nav class="navbar" id="navbar"><div class="navbar-inner"><a href="index.html" class="logo"><div class="logo-icon"><i class="fas fa-car"></i></div><span>Auto <span class="gold">Shine</span> Studio</span></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="blog.html" class="active">Blog</a></li><li><a href="contact.html">Contact</a></li><li><a href="book-appointment.html" class="nav-cta">Book Now</a></li></ul><button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></div></nav>
+<div class="mobile-menu" id="mobile-menu"><div class="mobile-menu-inner"><a href="index.html"><span class="m-icon"><i class="fas fa-home"></i></span>Home</a><a href="about.html"><span class="m-icon"><i class="fas fa-users"></i></span>About</a><a href="services.html"><span class="m-icon"><i class="fas fa-shield-halved"></i></span>Services</a><a href="gallery.html"><span class="m-icon"><i class="fas fa-images"></i></span>Gallery</a><a href="blog.html" class="active"><span class="m-icon"><i class="fas fa-pen"></i></span>Blog</a><a href="contact.html"><span class="m-icon"><i class="fas fa-envelope"></i></span>Contact</a><a href="book-appointment.html" class="mobile-book-btn"><i class="fas fa-calendar-check"></i> Book Appointment</a></div></div>
 
-<nav class="navbar" id="navbar">
-  <div class="navbar-inner">
-    <a href="index.html" class="logo"><div class="logo-icon"><i class="fas fa-car"></i></div><span>Auto <span class="gold">Shine</span> Studio</span></a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="blog.html" class="active">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="book-appointment.html" class="nav-cta">Book Now</a></li>
-    </ul>
-    <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </div>
-</nav>
-<div class="mobile-menu" id="mobile-menu">
-  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="blog.html" class="active">Blog</a><a href="contact.html">Contact</a><a href="book-appointment.html">Book Appointment</a>
-</div>
-
-<section class="page-hero">
-  <div class="container">
-    <span class="section-eyebrow">Knowledge Hub</span>
-    <h1>The <span class="text-gradient">Detailing Blog</span></h1>
-    <nav class="breadcrumb"><a href="index.html">Home</a><i class="fas fa-chevron-right" style="font-size:0.6rem;"></i><span>Blog</span></nav>
-  </div>
-</section>
+<section class="page-hero"><div class="container"><span class="section-eyebrow">Knowledge Hub</span><h1>The <span class="text-gradient">Detailing Blog</span></h1><nav class="breadcrumb"><a href="index.html">Home</a><i class="fas fa-chevron-right" style="font-size:.6rem;"></i><span>Blog</span></nav></div></section>
 
 <section class="section-pad" style="background:var(--dark);">
   <div class="container">
-
-    <!-- Category Filter -->
     <div class="filter-tabs" data-aos="fade-up">
       <button class="category-filter filter-btn active" data-category="all">All Articles</button>
       <button class="category-filter filter-btn" data-category="ppf">PPF</button>
-      <button class="category-filter filter-btn" data-category="ceramic">Ceramic Coating</button>
+      <button class="category-filter filter-btn" data-category="ceramic">Ceramic</button>
       <button class="category-filter filter-btn" data-category="tips">Car Care Tips</button>
       <button class="category-filter filter-btn" data-category="graphene">Graphene</button>
     </div>
 
-    <!-- Featured Post -->
-    <div class="blog-post" data-category="ceramic" data-aos="fade-up" style="margin-bottom:48px;">
-      <div style="background:var(--dark-card);border:1px solid var(--gold-border);border-radius:var(--radius);overflow:hidden;display:grid;grid-template-columns:1.2fr 1fr;gap:0;">
-        <div style="overflow:hidden;position:relative;">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Ceramic Coating Guide" style="width:100%;height:380px;object-fit:cover;transition:transform 0.6s ease;">
-          <span style="position:absolute;top:20px;left:20px;background:var(--gold);color:var(--dark);font-family:'Jost',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:6px 14px;border-radius:20px;">Featured</span>
-        </div>
-        <div style="padding:44px;">
-          <div class="blog-meta">
-            <span>Ceramic Coating</span>
-            <span class="blog-meta-dot"></span>
-            <span>12 min read</span>
-            <span class="blog-meta-dot"></span>
-            <span>Jan 15, 2026</span>
-          </div>
-          <h2 style="font-size:1.7rem;margin-bottom:16px;line-height:1.3;">The Complete Guide to Ceramic Coating: Everything You Need to Know in 2026</h2>
-          <p style="font-family:'Jost',sans-serif;font-size:0.9rem;color:var(--text-muted);line-height:1.8;margin-bottom:28px;">Ceramic coating has revolutionized car protection. But with so many options and myths circulating, how do you choose the right one? We break down everything — from chemistry to application to maintenance...</p>
-          <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
-        </div>
+    <!-- Featured -->
+    <div class="featured-post blog-post" data-category="ceramic" data-aos="fade-up">
+      <div class="featured-post-img">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Ceramic Coating Guide">
+        <span class="blog-tag">Featured</span>
+      </div>
+      <div class="featured-post-body">
+        <div class="blog-meta"><span>Ceramic Coating</span><span class="blog-meta-dot"></span><span>12 min read</span><span class="blog-meta-dot"></span><span>Jan 15, 2026</span></div>
+        <h2 style="font-size:clamp(1.2rem,3vw,1.7rem);margin-bottom:16px;line-height:1.3;">The Complete Guide to Ceramic Coating: Everything You Need to Know in 2026</h2>
+        <p style="font-size:clamp(.85rem,1.6vw,.92rem);color:var(--text-3);line-height:1.8;margin-bottom:24px;">Ceramic coating has revolutionized car protection. With so many options and myths circulating, how do you choose the right one? We break down everything — from chemistry to application to maintenance...</p>
+        <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
 
     <!-- Blog Grid -->
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px;">
-
-      <div class="blog-card blog-post" data-category="ppf" data-aos="fade-up" data-aos-delay="0">
-        <div class="blog-img-wrap">
-          <img class="blog-img" src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=500&q=80" alt="PPF vs Ceramic Coating">
-          <span class="blog-tag">PPF</span>
-        </div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span>Jan 8, 2026</span><span class="blog-meta-dot"></span><span>8 min read</span>
-          </div>
-          <h3 class="blog-title">PPF vs Ceramic Coating: Which One Does Your Car Actually Need?</h3>
-          <p class="blog-excerpt">Both offer protection, but they work differently and serve different purposes. Here's how to choose based on your lifestyle and budget...</p>
-          <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-
-      <div class="blog-card blog-post" data-category="graphene" data-aos="fade-up" data-aos-delay="100">
-        <div class="blog-img-wrap">
-          <img class="blog-img" src="https://images.unsplash.com/photo-1547744152-14d985cb937f?w=500&q=80" alt="Graphene Coating">
-          <span class="blog-tag">Graphene</span>
-        </div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span>Dec 28, 2025</span><span class="blog-meta-dot"></span><span>6 min read</span>
-          </div>
-          <h3 class="blog-title">Graphene Coating vs Ceramic: Is the Upgrade Worth It?</h3>
-          <p class="blog-excerpt">Graphene technology promised to be the next evolution in paint protection. After applying hundreds of graphene coatings, here's our honest verdict...</p>
-          <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-
-      <div class="blog-card blog-post" data-category="tips" data-aos="fade-up" data-aos-delay="200">
-        <div class="blog-img-wrap">
-          <img class="blog-img" src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=500&q=80" alt="Car maintenance tips">
-          <span class="blog-tag">Car Care Tips</span>
-        </div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span>Dec 15, 2025</span><span class="blog-meta-dot"></span><span>5 min read</span>
-          </div>
-          <h3 class="blog-title">10 Habits Every Car Owner Should Adopt to Maintain Their Paint</h3>
-          <p class="blog-excerpt">Great paint protection doesn't stop after the coating is applied. These daily and weekly habits will dramatically extend the life of your vehicle's paintwork...</p>
-          <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-
-      <div class="blog-card blog-post" data-category="tips" data-aos="fade-up" data-aos-delay="0">
-        <div class="blog-img-wrap">
-          <img class="blog-img" src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=500&q=80" alt="Car washing tips">
-          <span class="blog-tag">Car Care Tips</span>
-        </div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span>Nov 30, 2025</span><span class="blog-meta-dot"></span><span>7 min read</span>
-          </div>
-          <h3 class="blog-title">The Two-Bucket Method: Why Most Car Washes Are Doing More Harm Than Good</h3>
-          <p class="blog-excerpt">Automatic car washes and improper washing techniques cause thousands of tiny scratches every year. Learn the correct way to wash your car safely...</p>
-          <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-
-      <div class="blog-card blog-post" data-category="ppf" data-aos="fade-up" data-aos-delay="100">
-        <div class="blog-img-wrap">
-          <img class="blog-img" src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=500&q=80" alt="PPF guide">
-          <span class="blog-tag">PPF</span>
-        </div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span>Nov 18, 2025</span><span class="blog-meta-dot"></span><span>9 min read</span>
-          </div>
-          <h3 class="blog-title">Self-Healing PPF: The Science Behind the Magic</h3>
-          <p class="blog-excerpt">How does a film "heal" its own scratches? We explain the thermoplastic polymer science that makes modern PPF one of the most impressive materials in automotive protection...</p>
-          <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-
-      <div class="blog-card blog-post" data-category="ceramic" data-aos="fade-up" data-aos-delay="200">
-        <div class="blog-img-wrap">
-          <img class="blog-img" src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=500&q=80" alt="Ceramic coating maintenance">
-          <span class="blog-tag">Ceramic Coating</span>
-        </div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span>Nov 5, 2025</span><span class="blog-meta-dot"></span><span>6 min read</span>
-          </div>
-          <h3 class="blog-title">How to Maintain Your Ceramic Coating for Maximum Longevity</h3>
-          <p class="blog-excerpt">Your ceramic coating is an investment. With the right maintenance routine, you can extend its life significantly beyond the standard warranty period...</p>
-          <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-
+    <div class="blog-grid">
+      <div class="blog-card blog-post" data-category="ppf" data-aos="fade-up" data-aos-delay="0"><div class="blog-img-wrap"><img class="blog-img" src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=500&q=80" alt="PPF vs Ceramic"><span class="blog-tag">PPF</span></div><div class="blog-body"><div class="blog-meta"><span>Jan 8, 2026</span><span class="blog-meta-dot"></span><span>8 min</span></div><h3 class="blog-title">PPF vs Ceramic Coating: Which One Does Your Car Actually Need?</h3><p class="blog-excerpt">Both offer protection but work differently. Here's how to choose based on your lifestyle and budget...</p><a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a></div></div>
+      <div class="blog-card blog-post" data-category="graphene" data-aos="fade-up" data-aos-delay="80"><div class="blog-img-wrap"><img class="blog-img" src="https://images.unsplash.com/photo-1547744152-14d985cb937f?w=500&q=80" alt="Graphene"><span class="blog-tag">Graphene</span></div><div class="blog-body"><div class="blog-meta"><span>Dec 28, 2025</span><span class="blog-meta-dot"></span><span>6 min</span></div><h3 class="blog-title">Graphene vs Ceramic: Is the Upgrade Worth It?</h3><p class="blog-excerpt">Graphene technology promised to be the next evolution in paint protection. Here's our honest verdict after hundreds of applications...</p><a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a></div></div>
+      <div class="blog-card blog-post" data-category="tips" data-aos="fade-up" data-aos-delay="160"><div class="blog-img-wrap"><img class="blog-img" src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=500&q=80" alt="Car care tips"><span class="blog-tag">Car Care Tips</span></div><div class="blog-body"><div class="blog-meta"><span>Dec 15, 2025</span><span class="blog-meta-dot"></span><span>5 min</span></div><h3 class="blog-title">10 Habits Every Car Owner Should Adopt to Maintain Paint</h3><p class="blog-excerpt">Great paint protection doesn't stop after the coating is applied. These habits will dramatically extend your vehicle's paintwork...</p><a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a></div></div>
+      <div class="blog-card blog-post" data-category="tips" data-aos="fade-up" data-aos-delay="0"><div class="blog-img-wrap"><img class="blog-img" src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=500&q=80" alt="Car wash tips"><span class="blog-tag">Car Care Tips</span></div><div class="blog-body"><div class="blog-meta"><span>Nov 30, 2025</span><span class="blog-meta-dot"></span><span>7 min</span></div><h3 class="blog-title">The Two-Bucket Method: Why Most Car Washes Cause Damage</h3><p class="blog-excerpt">Automatic car washes and improper techniques cause thousands of tiny scratches every year. Learn the correct way to wash safely...</p><a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a></div></div>
+      <div class="blog-card blog-post" data-category="ppf" data-aos="fade-up" data-aos-delay="80"><div class="blog-img-wrap"><img class="blog-img" src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=500&q=80" alt="PPF guide"><span class="blog-tag">PPF</span></div><div class="blog-body"><div class="blog-meta"><span>Nov 18, 2025</span><span class="blog-meta-dot"></span><span>9 min</span></div><h3 class="blog-title">Self-Healing PPF: The Science Behind the Magic</h3><p class="blog-excerpt">How does a film "heal" its own scratches? We explain the thermoplastic polymer science behind modern PPF...</p><a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a></div></div>
+      <div class="blog-card blog-post" data-category="ceramic" data-aos="fade-up" data-aos-delay="160"><div class="blog-img-wrap"><img class="blog-img" src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=500&q=80" alt="Ceramic maintenance"><span class="blog-tag">Ceramic Coating</span></div><div class="blog-body"><div class="blog-meta"><span>Nov 5, 2025</span><span class="blog-meta-dot"></span><span>6 min</span></div><h3 class="blog-title">How to Maintain Your Ceramic Coating for Maximum Longevity</h3><p class="blog-excerpt">With the right maintenance routine, you can extend your ceramic coating's life significantly beyond the standard warranty period...</p><a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a></div></div>
     </div>
 
-    <div style="text-align:center;margin-top:56px;" data-aos="fade-up">
-      <a href="book-appointment.html" class="btn btn-primary btn-lg">
-        <i class="fas fa-calendar-check"></i> Ready to Protect Your Car?
-      </a>
-    </div>
-
+    <div style="text-align:center;margin-top:48px;" data-aos="fade-up"><a href="book-appointment.html" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Ready to Protect Your Car?</a></div>
   </div>
 </section>
 
-<footer class="footer">
-  <div class="footer-top"><div class="container"><div class="footer-grid">
-    <div><a href="index.html" class="logo"><div class="logo-icon"><i class="fas fa-car"></i></div><span>Auto <span class="gold">Shine</span> Studio</span></a><p class="footer-brand-desc">Rohini's most trusted premium car detailing studio.</p><div class="footer-social"><a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-btn"><i class="fab fa-instagram"></i></a><a href="#" class="social-btn"><i class="fab fa-youtube"></i></a><a href="https://wa.me/918076727526" class="social-btn"><i class="fab fa-whatsapp"></i></a></div></div>
-    <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-    <div class="footer-col"><h4>Services</h4><ul class="footer-links"><li><a href="services.html">PPF</a></li><li><a href="services.html">Ceramic Coating</a></li><li><a href="services.html">Graphene Coating</a></li><li><a href="services.html">Interior Detailing</a></li></ul></div>
-    <div class="footer-col"><h4>Contact</h4><ul class="footer-links"><li><a href="tel:+918076727526"><i class="fas fa-phone" style="color:var(--gold);margin-right:8px;"></i>+91 80767 27526</a></li><li><a href="mailto:info@autoshinestudio.com"><i class="fas fa-envelope" style="color:var(--gold);margin-right:8px;"></i>info@autoshinestudio.com</a></li></ul></div>
-  </div></div></div>
-  <div class="container"><div class="footer-bottom"><p>&copy; <span class="current-year">2026</span> Auto Shine Studio. All rights reserved.</p><p>Made with <i class="fas fa-heart" style="color:var(--gold);"></i> in Delhi</p></div></div>
-</footer>
-
-<div class="float-btns">
-  <a href="https://wa.me/918076727526" target="_blank" rel="noopener" class="float-btn float-wa"><i class="fab fa-whatsapp"></i></a>
-  <a href="tel:+918076727526" class="float-btn float-call"><i class="fas fa-phone"></i></a>
-</div>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="js/main.js"></script>
-</body>
-</html>
+<footer class="footer"><div class="footer-top"><div class="container"><div class="footer-grid"><div><a href="index.html" class="logo"><div class="logo-icon"><i class="fas fa-car"></i></div><span>Auto <span class="gold">Shine</span> Studio</span></a><p class="footer-brand-desc">Rohini's most trusted premium car detailing studio.</p><div class="footer-social"><a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-btn"><i class="fab fa-instagram"></i></a><a href="#" class="social-btn"><i class="fab fa-youtube"></i></a><a href="https://wa.me/918076727526" class="social-btn"><i class="fab fa-whatsapp"></i></a></div></div><div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-col"><h4>Services</h4><ul class="footer-links"><li><a href="services.html">PPF</a></li><li><a href="services.html">Ceramic Coating</a></li><li><a href="services.html">Graphene Coating</a></li><li><a href="services.html">Interior Detailing</a></li></ul></div><div class="footer-col"><h4>Contact</h4><ul class="footer-links"><li><a href="tel:+918076727526"><i class="fas fa-phone" style="color:var(--gold);"></i> +91 80767 27526</a></li><li><a href="mailto:info@autoshinestudio.com"><i class="fas fa-envelope" style="color:var(--gold);"></i> info@autoshinestudio.com</a></li></ul></div></div></div></div><div class="container"><div class="footer-bottom"><p>&copy; <span class="current-year">2026</span> Auto Shine Studio. All rights reserved.</p><p>Made with <i class="fas fa-heart" style="color:var(--gold);"></i> in Delhi</p></div></div></footer>
+<div class="float-btns"><a href="https://wa.me/918076727526" target="_blank" rel="noopener" class="float-btn float-wa"><i class="fab fa-whatsapp"></i></a><a href="tel:+918076727526" class="float-btn float-call"><i class="fas fa-phone"></i></a></div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script src="js/main.js"></script>
+</body></html>
