@@ -201,8 +201,10 @@ p{color:var(--text-2)}
 .service-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(201,168,76,.06),transparent 60%);opacity:0;transition:opacity var(--ease)}
 .service-card:hover::before{opacity:1}
 .service-card:hover{border-color:rgba(201,168,76,.5);transform:translateY(-6px);box-shadow:var(--shadow-gold)}
-.service-icon-wrap{width:clamp(56px,8vw,72px);height:clamp(56px,8vw,72px);background:rgba(201,168,76,.1);border:1px solid var(--gold-border);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:clamp(1.2rem,2.5vw,1.6rem);color:var(--gold);transition:all var(--ease)}
-.service-card:hover .service-icon-wrap{background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--dark);border-color:transparent;transform:scale(1.08)}
+.service-img-wrap{width:100%;height:180px;border-radius:var(--r-md);overflow:hidden;margin-bottom:20px;position:relative}
+.service-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform var(--ease)}
+.service-card:hover .service-img-wrap img{transform:scale(1.05)}
+.service-icon-wrap{display:none}
 .service-card h3{font-size:clamp(1rem,2vw,1.2rem);margin-bottom:12px}
 .service-card p{font-size:clamp(.82rem,1.5vw,.92rem);color:var(--text-3);line-height:1.75}
 .service-price{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.08em;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid var(--gold-border);padding:6px 16px;border-radius:20px;margin-top:16px}
