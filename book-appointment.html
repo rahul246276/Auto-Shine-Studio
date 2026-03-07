@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment — Auto Shine Studio | Rohini Delhi</title>
+  <meta name="description" content="Book your car detailing appointment at Auto Shine Studio in Rohini Sector-8, Delhi. PPF, ceramic coating, graphene coating and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="logo"><div class="logo-icon"><i class="fas fa-car"></i></div><span>Auto <span class="gold">Shine</span> Studio</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="book-appointment.html" class="nav-cta active">Book Now</a></li>
+    </ul>
+    <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a href="book-appointment.html" class="active">Book Appointment</a>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-eyebrow">Schedule Your Visit</span>
+    <h1>Book an <span class="text-gradient">Appointment</span></h1>
+    <nav class="breadcrumb"><a href="index.html">Home</a><i class="fas fa-chevron-right" style="font-size:0.6rem;"></i><span>Book Appointment</span></nav>
+  </div>
+</section>
+
+<section class="section-pad" style="background:var(--dark);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:64px;align-items:start;">
+
+      <!-- Form -->
+      <div data-aos="fade-right">
+        <div style="background:var(--dark-card);border:1px solid var(--gold-border);border-radius:var(--radius);padding:48px;">
+          <h2 style="font-size:1.8rem;margin-bottom:8px;">Schedule Your <span class="text-gradient">Service</span></h2>
+          <p style="font-family:'Jost',sans-serif;font-size:0.9rem;color:var(--text-muted);margin-bottom:36px;">Fill out the form and we'll confirm your appointment within 2 hours.</p>
+
+          <form id="bookingForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Full Name *</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="10-digit mobile" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="your@email.com">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="carMake">Car Make *</label>
+                <div class="select-wrap">
+                  <select id="carMake" name="carMake" class="form-control" required>
+                    <option value="" disabled selected>Select make</option>
+                    <option>Maruti Suzuki</option>
+                    <option>Hyundai</option>
+                    <option>Tata</option>
+                    <option>Mahindra</option>
+                    <option>Honda</option>
+                    <option>Toyota</option>
+                    <option>Volkswagen</option>
+                    <option>BMW</option>
+                    <option>Mercedes-Benz</option>
+                    <option>Audi</option>
+                    <option>Porsche</option>
+                    <option>Jeep</option>
+                    <option>Ford</option>
+                    <option>Kia</option>
+                    <option>MG</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="carModel">Car Model *</label>
+                <input type="text" id="carModel" name="carModel" class="form-control" placeholder="e.g. Creta, X5, GLC" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="service">Service Required *</label>
+              <div class="select-wrap">
+                <select id="service" name="service" class="form-control" required>
+                  <option value="" disabled selected>Select service</option>
+                  <option>Paint Protection Film (PPF)</option>
+                  <option>Ceramic Coating</option>
+                  <option>Graphene Coating</option>
+                  <option>Paint Correction</option>
+                  <option>Interior Detailing</option>
+                  <option>Exterior Detailing</option>
+                  <option>Full Detail Package</option>
+                  <option>Hydro Dipping</option>
+                  <option>Glass Coating</option>
+                  <option>Wheel & Tyre Care</option>
+                  <option>Multiple Services</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="date">Preferred Date *</label>
+                <input type="date" id="date" name="date" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="time">Preferred Time *</label>
+                <div class="select-wrap">
+                  <select id="time" name="time" class="form-control" required>
+                    <option value="" disabled selected>Select time</option>
+                    <option>9:00 AM</option>
+                    <option>10:00 AM</option>
+                    <option>11:00 AM</option>
+                    <option>12:00 PM</option>
+                    <option>1:00 PM</option>
+                    <option>2:00 PM</option>
+                    <option>3:00 PM</option>
+                    <option>4:00 PM</option>
+                    <option>5:00 PM</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Additional Notes</label>
+              <textarea id="message" name="message" class="form-control" rows="4" placeholder="Any specific requirements or questions..."></textarea>
+            </div>
+
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:24px;">
+              <input type="checkbox" id="pickup" name="pickup" style="width:18px;height:18px;accent-color:var(--gold);">
+              <label for="pickup" style="font-family:'Jost',sans-serif;font-size:0.88rem;color:var(--text-secondary);cursor:pointer;">
+                I need pickup & drop service (available within Delhi NCR for orders above ₹15,000)
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:16px;">
+              <i class="fas fa-calendar-check"></i> Confirm Appointment
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Info Panel -->
+      <div data-aos="fade-left">
+        <div style="background:var(--dark-card);border:1px solid var(--gold-border);border-radius:var(--radius);padding:36px;margin-bottom:20px;">
+          <h3 style="font-size:1.2rem;margin-bottom:24px;">Contact Information</h3>
+          <div class="contact-info-item">
+            <div class="contact-icon-box"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="contact-info-label">Address</div>
+              <div class="contact-info-val">Auto Shine Studio<br>Rohini Sector-8, Delhi NCR, India</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon-box"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="contact-info-label">Phone</div>
+              <div class="contact-info-val"><a href="tel:+918076727526" style="color:var(--gold);">+91 80767 27526</a></div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon-box"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <div class="contact-info-label">WhatsApp</div>
+              <div class="contact-info-val"><a href="https://wa.me/918076727526" target="_blank" style="color:var(--gold);">Chat with us</a></div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon-box"><i class="fas fa-clock"></i></div>
+            <div>
+              <div class="contact-info-label">Business Hours</div>
+              <div class="contact-info-val">Mon–Sat: 9:00 AM – 7:00 PM<br>Sunday: 10:00 AM – 5:00 PM</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="notice" data-aos="fade-up">
+          <i class="fas fa-info-circle" style="color:var(--gold);margin-right:8px;"></i>
+          After submitting, our team will call you within 2 hours to confirm availability and provide a detailed quote.
+        </div>
+
+        <div style="background:var(--dark-card);border:1px solid var(--gold-border);border-radius:var(--radius);padding:28px;margin-top:20px;" data-aos="fade-up">
+          <h4 style="font-size:1rem;margin-bottom:18px;">Why Book With Us?</h4>
+          <ul class="feature-list">
+            <li>No advance payment required to book</li>
+            <li>Free consultation & accurate quote</li>
+            <li>Flexible rescheduling, no penalty</li>
+            <li>Real-time updates on your vehicle</li>
+            <li>Courtesy wash after any service</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Success Modal -->
+<div id="successMessage" class="hidden" style="position:fixed;inset:0;background:rgba(8,8,8,0.95);display:none;align-items:center;justify-content:center;z-index:2000;" role="dialog" aria-modal="true">
+  <div style="background:var(--dark-card);border:1px solid var(--gold);border-radius:var(--radius-lg);padding:48px;max-width:440px;width:90%;text-align:center;">
+    <div style="width:72px;height:72px;background:rgba(201,168,76,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:2rem;color:var(--gold);">
+      <i class="fas fa-check"></i>
+    </div>
+    <h3 style="font-size:1.6rem;margin-bottom:12px;">Appointment Requested!</h3>
+    <p style="font-family:'Jost',sans-serif;font-size:0.92rem;color:var(--text-muted);line-height:1.7;margin-bottom:28px;">Our team will call you within 2 hours to confirm your appointment and provide a detailed quote.</p>
+    <button onclick="document.getElementById('successMessage').style.display='none'" class="btn btn-primary" style="width:100%;justify-content:center;">
+      <i class="fas fa-thumbs-up"></i> Perfect, Thank You!
+    </button>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-top"><div class="container"><div class="footer-grid">
+    <div><a href="index.html" class="logo"><div class="logo-icon"><i class="fas fa-car"></i></div><span>Auto <span class="gold">Shine</span> Studio</span></a><p class="footer-brand-desc">Rohini's most trusted premium car detailing studio.</p><div class="footer-social"><a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-btn"><i class="fab fa-instagram"></i></a><a href="#" class="social-btn"><i class="fab fa-youtube"></i></a><a href="https://wa.me/918076727526" class="social-btn"><i class="fab fa-whatsapp"></i></a></div></div>
+    <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Services</h4><ul class="footer-links"><li><a href="services.html">PPF</a></li><li><a href="services.html">Ceramic Coating</a></li><li><a href="services.html">Graphene Coating</a></li><li><a href="services.html">Interior Detailing</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul class="footer-links"><li><a href="tel:+918076727526"><i class="fas fa-phone" style="color:var(--gold);margin-right:8px;"></i>+91 80767 27526</a></li><li><a href="mailto:info@autoshinestudio.com"><i class="fas fa-envelope" style="color:var(--gold);margin-right:8px;"></i>info@autoshinestudio.com</a></li></ul></div>
+  </div></div></div>
+  <div class="container"><div class="footer-bottom"><p>&copy; <span class="current-year">2026</span> Auto Shine Studio. All rights reserved.</p><p>Made with <i class="fas fa-heart" style="color:var(--gold);"></i> in Delhi</p></div></div>
+</footer>
+
+<div class="float-btns">
+  <a href="https://wa.me/918076727526" target="_blank" rel="noopener" class="float-btn float-wa"><i class="fab fa-whatsapp"></i></a>
+  <a href="tel:+918076727526" class="float-btn float-call"><i class="fas fa-phone"></i></a>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // Set minimum date to today
+  document.addEventListener('DOMContentLoaded', () => {
+    const dateInput = document.getElementById('date');
+    if (dateInput) {
+      const today = new Date();
+      const yyyy = today.getFullYear();
+      const mm = String(today.getMonth() + 1).padStart(2, '0');
+      const dd = String(today.getDate()).padStart(2, '0');
+      dateInput.min = `${yyyy}-${mm}-${dd}`;
+    }
+
+    // Fix: override form submit to show modal properly
+    const form = document.getElementById('bookingForm');
+    const modal = document.getElementById('successMessage');
+    if (form && modal) {
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        let valid = true;
+        form.querySelectorAll('[required]').forEach(f => {
+          if (!f.value.trim()) { valid = false; f.style.borderColor = 'var(--error)'; }
+          else f.style.borderColor = '';
+        });
+        if (valid) {
+          modal.style.display = 'flex';
+          form.reset();
+        }
+      });
+    }
+  });
+</script>
+</body>
+</html>
