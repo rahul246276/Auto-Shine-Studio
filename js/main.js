@@ -60,7 +60,7 @@ function initSmoothScroll() {
   $$('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
       const href = a.getAttribute('href');
-      if (href==='#') return;
+      if (!href || href === '#' || href.startsWith('http')) return;
       const target = $(href);
       if (!target) return;
       e.preventDefault();
